@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Student Enrollment</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;background-color: aqua;margin: 2%;color: white;padding: 2%;">STUDENT REGISTRATION FORM</h1>
+    <div class="main">
+        <div class="container">
+            <label for="">Name</label>
+            <input type="text" id="name"><br>
+            <label for="">Email</label>
+            <input type="email" id="email"><br>
+            <label for="">Website</label>
+            <input type="url" name="" id="website"><br>
+            <label for="">Image Link</label>
+            <input type="url" name="" id="imageLink"><br>
+            <span>Gender</span>
+            <label for="">Male</label>
+            <input type="radio" name="gender" class="gender" value="Male" checked><br>
+            <label for="">Female</label>
+            <input type="radio" name="gender" class="gender" value="Female"><br>
+            <span>Skills</span>
+            <label for="">Java</label>
+            <input type="checkbox" name="language" class="lang" value="Java" checked>
+            <label for="">HTML</label>
+            <input type="checkbox" name="language" class="lang" value="HTML">
+            <label for="">CSS</label>
+            <input type="checkbox" name="language" class="lang" value="CSS">
+            <button type="submit" id="enroll">Enroll</button>
+            <button  id="clear">Clear</button>
+        </div>
+        <hr />
+        <div class="en">
+            <h1>Enrolled Students</h1>
+            <div class="ca">
+                <div class="heading" style="display: flex;">
+
+                    <div class="heading1" style="margin-right: 200px;">
+                        <h2 class="" >Description</h2>
+                    </div>
+                    <div class="heading2" style="margin-right: 60px;">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+                <div id="cards">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./script.mjs"></script>
+</body>
+
+</html>
